@@ -1,0 +1,31 @@
+window:
+  padding:
+    x: 4
+    y: 4
+  dynamic_padding: true
+
+colors:
+  primary:
+    background: '#222222'
+    foreground: '#eeeeee'
+
+  normal:
+    black:   '#1c1c1c'
+    red:     '#ff5f5f'
+    green:   '#5fff87'
+    yellow:  '#ffd75f'
+    blue:    '#5fafff'
+    magenta: '#d75fff'
+    cyan:    '#5fd7ff'
+    white:   '#d0d0d0'
+
+  bright:
+    black:   '#444444'
+    red:     '#ff8787'
+    green:   '#87ffaf'
+    yellow:  '#ffdf87'
+    blue:    '#87afff'
+    magenta: '#e7a7ff'
+    cyan:    '#87dfff'
+    white:   '#ffffff'
+
