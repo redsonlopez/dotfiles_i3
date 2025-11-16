@@ -9,8 +9,10 @@ filetype plugin indent on
 syntax on
 
 " Definir tamanho das tabulações
+set expandtab
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 
 " Configuração para cores serem bem aceitas independente do terminal
 set termguicolors
@@ -83,18 +85,6 @@ set mouse=a
 "set ignorecase
 "set smartcase
 
-" Colore as letras na pesquisa
-"set incsearch
-
-" Menu sobreposto
-"set wildmenu
-
-" Ativar a identação automática
-"filetype plugin indent on
-
-" Usar espaços em vez de tabulações
-"set expandtab
-
 " Configuração para recuo automático
 "set autoindent
 
@@ -104,9 +94,6 @@ set mouse=a
 " Exibir caracteres de tabulação e espaços em branco
 "set list
 "set listchars=tab:»\ ,trail:·
-
-" Titulo
-"set title
 
 " Configuração para criar arquivos de backup e arquivos de troca
 "set backup
