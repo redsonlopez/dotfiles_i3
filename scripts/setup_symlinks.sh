@@ -5,7 +5,7 @@ sudo pacman -S alacritty dmenu brightnessctl feh git i3status neovim pavucontrol
 mkdir -p ~/.config
 sudo mkdir -p /usr/share/backgrounds
 
-DOTFILES_DIR="$HOME/Projects/dotfiles_sway"
+DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
 declare -a CONFIGS=("alacritty" "i3" "i3status" "nvim")
@@ -27,7 +27,7 @@ done
 echo "Vinculando .bashrc..."
 ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
-WALLPAPER_SRC="$DOTFILES_DIR/sway/ds.png"
+WALLPAPER_SRC="$DOTFILES_DIR/i3/ds.png"
 if [ -f "$WALLPAPER_SRC" ]; then
     sudo cp $WALLPAPER_SRC /usr/share/backgrounds/ds.jpg
 else
