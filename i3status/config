@@ -29,7 +29,7 @@ load {
 }
 
 memory {
-	format = "󰘚 %used"
+	format = "󰘚  %used"
 	threshold_degraded = "1G"
 }
 
@@ -56,6 +56,6 @@ battery all {
 }
 
 tztime time {
-	format = "%e %b %H:%M "
+	format = " %e %b %H:%M "
 }
 
