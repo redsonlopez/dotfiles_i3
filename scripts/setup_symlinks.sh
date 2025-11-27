@@ -5,8 +5,9 @@ sudo pacman -S alacritty brightnessctl dmenu feh git neovim mpc mpd polybar tree
 mkdir -p ~/.config
 sudo mkdir -p /usr/share/backgrounds
 mkdir -p ~/.local/share/mpd/playlists
-mkdir ~/Music
+mkdir -p ~/Music
 cp ~/Projects/dotfiles_i3/music/* ~/Music
+
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
