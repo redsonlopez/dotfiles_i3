@@ -1,0 +1,6 @@
+require("red.plugins")
+require("red.treesitter")
+require("red.settings")
+require("red.nvim-tree")
+require("red.theme")
+require("red.keymaps")

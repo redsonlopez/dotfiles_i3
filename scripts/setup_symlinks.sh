@@ -1,14 +1,16 @@
 #!/bin/bash
 
-sudo pacman -S alacritty dmenu brightnessctl feh git i3status neovim pavucontrol tree ttf-nerd-fonts-symbols xclip
+sudo pacman -S alacritty brightnessctl dmenu feh git neovim mpc mpd polybar tree ttf-nerd-fonts-symbols xclip
 
 mkdir -p ~/.config
 sudo mkdir -p /usr/share/backgrounds
-
+mkdir -p ~/.local/share/mpd/playlists
+mkdir ~/Music
+cp ~/Projects/dotfiles_i3/music/* ~/Music
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
-declare -a CONFIGS=("alacritty" "i3" "i3status" "nvim")
+declare -a CONFIGS=("alacritty" "i3" "mpd" "nvim" "polybar")
 
 # Criação dos links simbólicos
 for dir in "${CONFIGS[@]}"; do
@@ -37,3 +39,7 @@ fi
 
 echo "Configurações vinculadas com sucesso."
 
+systemctl --user enable --now mpd.service
+mpc update
+mpc add /
+mpc repeat on
