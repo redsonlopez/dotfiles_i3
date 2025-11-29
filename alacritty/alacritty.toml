@@ -6,8 +6,7 @@ x = 4
 y = 4
 
 [colors.primary]
-#background = "#222222"
-background = "#1e222a"
+background = "#222222"
 foreground = "#eeeeee"
 
 [colors.normal]
