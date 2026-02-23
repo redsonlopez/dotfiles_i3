@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias tree='tree -C --dirsfirst'
-alias treedev='tree -a -I ".git|.venv|.ipynb_checkpoints|__pycache__"'
+alias treedev='tree -a -I ".git|.venv|*.egg-info|.ipynb_checkpoints|__pycache__|node_modules"'
 
 # remove duplicate entries from history
 export HISTCONTROL=ignoreboth
