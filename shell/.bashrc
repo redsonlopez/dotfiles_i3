@@ -36,27 +36,28 @@ RESET_COLOR="\[\033[0;0m\]"
 #PS1="$PETROL_LIGHT\w$PETROL\$(parse_git_branch)$RESET_COLOR\$ "
 PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 
+
 # fnm
-FNM_PATH="/home/red/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
-fi
-
-alias npm='pnpm'
-alias npx='pnpm dlx'
-
+#FNM_PATH="/home/red/.local/share/fnm"
+#if [ -d "$FNM_PATH" ]; then
+#  export PATH="$FNM_PATH:$PATH"
+#  eval "`fnm env`"
+#fi
+#
+#alias npm='pnpm'
+#alias npx='pnpm dlx'
+#
 # Ativar e mostrar automaticamente a versão do Node ao entrar em uma pasta com .nvmrc
-eval "$(fnm env --use-on-cd)"
-
-cd() {
-  builtin cd "$@" || return
-  if [ -f .nvmrc ]; then
-    fnm use > /dev/null
-    echo "→ Node version: $(node -v)"
-  fi
-}
-
+#eval "$(fnm env --use-on-cd)"
+#
+#cd() {
+#  builtin cd "$@" || return
+#  if [ -f .nvmrc ]; then
+#    fnm use > /dev/null
+#    echo "→ Node version: $(node -v)"
+#  fi
+#}
+#
 # Path
-export PATH="$HOME/.local/bin:$PATH"
+#export PATH="$HOME/.local/bin:$PATH"
 

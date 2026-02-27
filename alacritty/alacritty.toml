@@ -5,6 +5,9 @@ dynamic_padding = true
 x = 4
 y = 4
 
+[font]
+size = 15.0
+
 [colors.primary]
 background = "#222222"
 foreground = "#eeeeee"

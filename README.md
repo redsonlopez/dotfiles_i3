@@ -1,3 +1,10 @@
 # Dotfiles - i3 Setup
 
-Este repositório contém minhas configurações pessoais do i3wm
+Minhas configurações do i3wm
+
+## Preview
+
+<p align="center">
+  <img src="screenshots/i3-setup.png" width="800">
+</p>
+

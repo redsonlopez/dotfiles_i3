@@ -1,12 +1,14 @@
 #!/bin/bash
 
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git neovim mpc mpd polybar tree ttf-nerd-fonts-symbols xclip
+#sudo pacman -S alacritty base-devel brightnessctl dmenu feh git neovim mpc mpd polybar tree ttf-nerd-fonts-symbols xclip
+sudo pacman -S alacritty base-devel brightnessctl dmenu feh git neovim polybar scrot tree ttf-nerd-fonts-symbols xclip
 
 mkdir -p ~/.config
 sudo mkdir -p /usr/share/backgrounds
-mkdir -p ~/.local/share/mpd/playlists
-mkdir -p ~/Music
-cp ~/Projects/dotfiles_i3/music/* ~/Music
+mkdir -p ~/Image/screenshots
+#mkdir -p ~/.local/share/mpd/playlists
+#mkdir -p ~/Music
+#cp ~/Projects/dotfiles_i3/music/* ~/Music
 
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
@@ -40,7 +42,7 @@ fi
 
 echo "Configurações vinculadas com sucesso."
 
-systemctl --user enable --now mpd.service
-mpc update
-mpc add /
-mpc repeat on
+#systemctl --user enable --now mpd.service
+#mpc update
+#mpc add /
+#mpc repeat on
