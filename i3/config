@@ -61,7 +61,9 @@ bindsym $mod+Shift+f exec firefox
 # kill focused window
 bindsym $mod+Shift+q kill
 
-bindsym $mod+Shift+s exec scrot ~/Image/screenshots/scrot_%Y-%m-%d_%H-%M-%S.png
+# Screenshot
+bindsym $mod+p exec scrot ~/Image/screenshots/scrot_%Y-%m-%d_%H-%M-%S.png
+bindsym $mod+Shift+s exec scrot -s ~/Image/screenshots/scrot_%Y-%m-%d_%H-%M-%S.png
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#333333' -sf '#EEEEEE' -fn 'monospace-13'"
