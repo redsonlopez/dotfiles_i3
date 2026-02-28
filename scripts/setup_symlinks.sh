@@ -15,7 +15,7 @@ CONFIG_DIR="$HOME/.config"
 
 declare -a CONFIGS=("alacritty" "i3" "mpd" "nvim" "polybar")
 
-# Criação dos links simbólicos
+# Symbolic Link
 for dir in "${CONFIGS[@]}"; do
     SRC="$DOTFILES_DIR/$dir"
     DEST="$CONFIG_DIR/$dir"
@@ -32,9 +32,10 @@ done
 echo "Vinculando .bashrc..."
 ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
-WALLPAPER_SRC="$DOTFILES_DIR/i3/tokio.png"
+# Wallpaper
+WALLPAPER_SRC="$DOTFILES_DIR/i3/misty_boat.png"
 if [ -f "$WALLPAPER_SRC" ]; then
-    sudo cp $WALLPAPER_SRC /usr/share/backgrounds/tokio.png
+    sudo cp $WALLPAPER_SRC /usr/share/backgrounds/misty_boat.png
 else
     echo "  Imagem não encontrada no diretório atual."
     echo "  Coloque a imagem na mesma pasta deste script e execute novamente."
