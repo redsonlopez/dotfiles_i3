@@ -45,6 +45,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -217,15 +221,15 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-default_border pixel 3
+default_border pixel 2
 smart_borders on
 #gaps inner 4
 #gaps outer 0
 #smart_gaps on
 
-# Windows borders		#		#		#		#		border
-client.focused          #cccccc #cccccc #000000 #cccccc #444444
-client.focused_inactive #555555 #555555 #000000 #555555 #333333
-client.unfocused        #333333 #333333 #000000 #333333 #333333
-client.urgent           #ff0000 #ff0000 #000000 #ff0000 #ff0000
+# Windows borders		    #   		#   		#   		#		    border
+client.focused          #cccccc #cccccc #000000 #cccccc #444444dd
+client.focused_inactive #555555 #555555 #000000 #555555 #333333dd
+client.unfocused        #333333 #333333 #000000 #333333 #333333dd
+client.urgent           #ff0000 #ff0000 #000000 #ff0000 #ff0000dd
 
