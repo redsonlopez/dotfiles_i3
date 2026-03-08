@@ -9,6 +9,6 @@ Minhas configurações do i3wm
 </p>
 
 <p align="center">
-  <img src="screenshots/i3-setup-fastfetch.png" width="800">
+  <img src="screenshots/setup-specifications.png" width="800">
 </p>
 
