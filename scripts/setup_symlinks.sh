@@ -3,12 +3,13 @@
 #sudo pacman -S alacritty base-devel brightnessctl dmenu feh git neovim mpc mpd polybar tree ttf-nerd-fonts-symbols xclip
 sudo pacman -S alacritty base-devel brightnessctl dmenu feh git neovim polybar scrot tree ttf-nerd-fonts-symbols xclip
 
-mkdir -p ~/.config
+mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
-mkdir -p ~/Image/screenshots
-#mkdir -p ~/.local/share/mpd/playlists
-#mkdir -p ~/Music
-#cp ~/Projects/dotfiles_i3/music/* ~/Music
+sudo cp $HOME/Projects/dotfiles_i3/wallpapers/* /usr/share/backgrounds
+mkdir -p $HOME/Image/screenshots
+#mkdir -p $HOME/.local/share/mpd/playlists
+#mkdir -p $HOME/Music
+#cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
@@ -32,18 +33,10 @@ done
 echo "Vinculando .bashrc..."
 ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
-# Wallpaper
-WALLPAPER_SRC="$DOTFILES_DIR/i3/misty_boat.png"
-if [ -f "$WALLPAPER_SRC" ]; then
-    sudo cp $WALLPAPER_SRC /usr/share/backgrounds/misty_boat.png
-else
-    echo "  Imagem não encontrada no diretório atual."
-    echo "  Coloque a imagem na mesma pasta deste script e execute novamente."
-fi
-
-echo "Configurações vinculadas com sucesso."
 
 #systemctl --user enable --now mpd.service
 #mpc update
 #mpc add /
 #mpc repeat on
+
+echo "Configurações executadas com sucesso."
