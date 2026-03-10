@@ -6,7 +6,7 @@ sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-ext
 mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
 sudo cp $HOME/Projects/dotfiles_i3/wallpapers/* /usr/share/backgrounds
-mkdir -p $HOME/Image/screenshots
+mkdir -p $HOME/Images/screenshots
 #mkdir -p $HOME/.local/share/mpd/playlists
 #mkdir -p $HOME/Music
 #cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
