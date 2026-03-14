@@ -60,8 +60,10 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec alacritty
 
 # Start web browser
-bindsym $mod+Shift+b exec chromium --enable-features=VaapiVideoDecoder --use-gl=desktop
 bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+b exec chromium
+bindsym $mod+Shift+m exec chromium --app=https://meet.google.com
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
