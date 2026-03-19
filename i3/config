@@ -61,9 +61,9 @@ bindsym $mod+Return exec alacritty
 
 # Start web browser
 bindsym $mod+Shift+f exec firefox
-bindsym $mod+Shift+b exec chromium --app=https://remotedesktop.google.com/u/1/access
+bindsym $mod+Shift+b exec chromium
+bindsym $mod+Shift+d exec chromium --app=https://remotedesktop.google.com/u/1/access
 bindsym $mod+Shift+m exec chromium --app=https://meet.google.com/landing?authuser=1
-
 
 # kill focused window
 bindsym $mod+Shift+q kill
