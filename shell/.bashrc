@@ -36,8 +36,10 @@ RESET_COLOR="\[\033[0;0m\]"
 #PS1="$PETROL_LIGHT\w$PETROL\$(parse_git_branch)$RESET_COLOR\$ "
 PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 
-
-# fnm
+##
+# Node
+##
+#
 #FNM_PATH="/home/red/.local/share/fnm"
 #if [ -d "$FNM_PATH" ]; then
 #  export PATH="$FNM_PATH:$PATH"
@@ -61,8 +63,13 @@ PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 # Path
 #export PATH="$HOME/.local/bin:$PATH"
 
+##
+# Python
+##
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
+#eval "$(pyenv virtualenv-init -)"
 
-eval "$(pyenv virtualenv-init -)"
+. "$HOME/.local/bin/env"
+
