@@ -1,15 +1,14 @@
 #!/bin/bash
 
-#sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra neovim mpc mpd polybar scrot tree ttf-nerd-fonts-symbols xclip
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra neovim polybar scrot tree ttf-nerd-fonts-symbols xclip
+sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra neovim mpc mpd polybar scrot tree ttf-nerd-fonts-symbols xclip
 
 mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
 sudo cp $HOME/Projects/dotfiles_i3/wallpapers/* /usr/share/backgrounds
 mkdir -p $HOME/Images/screenshots
-#mkdir -p $HOME/.local/share/mpd/playlists
-#mkdir -p $HOME/Music
-#cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
+mkdir -p $HOME/.local/share/mpd/playlists
+mkdir -p $HOME/Music
+cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
@@ -34,9 +33,9 @@ echo "Vinculando .bashrc..."
 ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
 
-#systemctl --user enable --now mpd.service
-#mpc update
-#mpc add /
-#mpc repeat on
+systemctl --user enable --now mpd.service
+mpc update
+mpc add /
+mpc repeat on
 
 echo "Configurações executadas com sucesso."
