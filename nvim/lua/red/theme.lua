@@ -12,7 +12,6 @@ local fg_dim          = "#545454" -- Line Number
 local fg_separator    = "#777777" -- Borders and Separators
 local accent          = "#ffaa00" -- Selected Tab
 
-
 api.nvim_create_autocmd({ "ColorScheme", "FileType" }, {
   pattern = { "*", "NvimTree" },
   callback = function()
@@ -36,6 +35,7 @@ api.nvim_create_autocmd({ "ColorScheme", "FileType" }, {
     api.nvim_set_hl(0, "CursorLineFold",  { bg = base_bg })
     -- BackGround
     api.nvim_set_hl(0, "Normal",      { bg = base_bg })
+    api.nvim_set_hl(0, "NormalNC",    { bg = base_bg })
     api.nvim_set_hl(0, "NormalFloat", { bg = base_bg })
     api.nvim_set_hl(0, "FloatBorder", { bg = base_bg })
     api.nvim_set_hl(0, "Pmenu",       { bg = base_bg_popup })
@@ -52,3 +52,4 @@ api.nvim_create_autocmd({ "ColorScheme", "FileType" }, {
     })
   end,
 })
+
