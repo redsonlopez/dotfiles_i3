@@ -4,13 +4,13 @@ local api  = vim.api
 vim.cmd.colorscheme("monokai-pro-spectrum")
 
 -- Theme Colors
-local base_bg         = "#222222"
-local base_bg_light   = "#2e2e2e"
-local base_bg_popup   = "#333333"
-local fg_muted        = "#888888"
-local fg_dim          = "#545454"
-local fg_separator    = "#777777"
-local accent          = "#ffaa00"
+local base_bg         = "#222222" -- Main Background
+local base_bg_light   = "#2e2e2e" -- Cursor Line
+local base_bg_popup   = "#333333" -- Popup / Pmenu
+local fg_muted        = "#888888" -- Secondary Text
+local fg_dim          = "#545454" -- Line Number
+local fg_separator    = "#777777" -- Borders and Separators
+local accent          = "#ffaa00" -- Selected Tab
 
 
 api.nvim_create_autocmd({ "ColorScheme", "FileType" }, {
