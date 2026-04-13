@@ -34,6 +34,8 @@ ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
 
 systemctl --user enable --now mpd.service
+mpc stop
+mpc clear
 mpc update
 mpc add /
 mpc repeat on
