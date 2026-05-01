@@ -6,7 +6,19 @@ x = 4
 y = 4
 
 [font]
-size = 14.0
+size = 11.0
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Medium"
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+style = "Italic"
 
 [colors.primary]
 background = "#222222"
