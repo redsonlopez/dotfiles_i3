@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra neovim less polybar scrot tree ttf-firacode-nerd xclip
-# sudo pacman -S mpc mpd ttf-nerd-fonts-symbols
+sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra kitty neovim less polybar scrot tree ttf-firacode-nerd ttf-nerd-fonts-symbols xclip
+# sudo pacman -S mpc mpd
 
 mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
@@ -17,7 +17,7 @@ sudo cp $HOME/Projects/dotfiles_i3/config/lightdm-gtk-greeter.conf /etc/lightdm/
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
-declare -a CONFIGS=("alacritty" "i3" "mpd" "nvim" "polybar")
+declare -a CONFIGS=("alacritty" "i3" "i3status" "kitty" "mpd" "nvim" "polybar")
 
 # Symbolic Link
 for dir in "${CONFIGS[@]}"; do
@@ -37,11 +37,12 @@ echo "Vinculando .bashrc..."
 ln -sf "$DOTFILES_DIR/shell/.bashrc" "$HOME/.bashrc"
 
 
-systemctl --user enable --now mpd.service
-mpc stop
-mpc clear
-mpc update
-mpc add /
-mpc repeat on
+#systemctl --user enable --now mpd.service
+#mpc stop
+#mpc clear
+#mpc update
+#mpc add /
+#mpc repeat on
 
 echo "Configurações executadas com sucesso."
+
