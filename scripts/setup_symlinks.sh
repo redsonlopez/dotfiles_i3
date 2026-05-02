@@ -11,6 +11,9 @@ mkdir -p $HOME/.local/share/mpd/playlists
 mkdir -p $HOME/Music
 cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
+sudo cp $HOME/Projects/dotfiles_i3/config/config30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.con
+sudo cp $HOME/Projects/dotfiles_i3/config/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
