@@ -1,7 +1,8 @@
 #!/bin/bash
 
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra kitty neovim less polybar scrot tree ttf-firacode-nerd ttf-nerd-fonts-symbols xclip
+sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra gnu-free-fonts kitty neovim less polybar scrot tree ttf-firacode-nerd ttf-nerd-fonts-symbols xclip
 # sudo pacman -S mpc mpd
+fc-cache -fv
 
 mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
