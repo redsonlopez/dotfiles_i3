@@ -66,10 +66,9 @@ PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 ##
 # Python
 ##
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
-#eval "$(pyenv virtualenv-init -)"
-
-. "$HOME/.local/bin/env"
+#export PYENV_ROOT="$HOME/.pyenv"
+#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init - bash)"
+#
+#. "$HOME/.local/bin/env"
 
