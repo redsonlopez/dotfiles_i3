@@ -36,6 +36,8 @@ RESET_COLOR="\[\033[0;0m\]"
 #PS1="$PETROL_LIGHT\w$PETROL\$(parse_git_branch)$RESET_COLOR\$ "
 PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 
+export PATH="$HOME/.local/bin:$PATH"
+
 ##
 # Node
 ##
@@ -60,8 +62,6 @@ PS1="$ORANGE\w$YELLOW\$(parse_git_branch)$RESET_COLOR\$ "
 #  fi
 #}
 #
-# Path
-#export PATH="$HOME/.local/bin:$PATH"
 
 ##
 # Python
