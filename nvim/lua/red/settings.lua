@@ -40,3 +40,20 @@ o.laststatus = 3
 o.statusline =
   "%#StatusLine# %m%r%h%w %=%Y - %p%% of the file - line %l,%v of %L "
 
+
+-- Markdown
+o.wrap = true
+o.linebreak = true
+o.conceallevel = 2
+o.concealcursor = "nc"
+
+--vim.api.nvim_create_autocmd("FileType", {
+--    pattern = "markdown",
+--    callback = function()
+--        vim.opt_local.wrap = true
+--        vim.opt_local.linebreak = true
+--        vim.opt_local.conceallevel = 2
+--        vim.opt_local.concealcursor = "nc"
+--    end,
+--})
+

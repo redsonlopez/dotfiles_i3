@@ -16,10 +16,12 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     build = { ":TSUpdate" },
   },
-  { "loctvl842/monokai-pro.nvim" },
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+  {
+    "loctvl842/monokai-pro.nvim"
   },
 })
 
