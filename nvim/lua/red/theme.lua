@@ -10,7 +10,7 @@ local base_bg_popup   = "#333333" -- Popup / Pmenu
 local fg_muted        = "#888888" -- Secondary Text
 local fg_dim          = "#545454" -- Line Number
 local fg_separator    = "#777777" -- Borders and Separators
-local accent          = "#ffaa00" -- Selected Tab
+local accent          = "#e5c07b" -- Selected Tab
 
 api.nvim_create_autocmd({ "ColorScheme", "FileType" }, {
   pattern = { "*", "NvimTree" },
