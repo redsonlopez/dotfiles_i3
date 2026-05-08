@@ -1,7 +1,9 @@
 #!/bin/bash
 
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnome-themes-extra gnu-free-fonts kitty neovim less polybar scrot tree ttf-firacode-nerd ttf-nerd-fonts-symbols xclip
-# sudo pacman -S mpc mpd
+sudo pacman -S alacritty base-devel brightnessctl dmenu feh git gnu-free-fonts neovim less scrot tree ttf-firacode-nerd ttf-nerd-fonts-symbols xclip
+
+# sudo pacman -S gnome-themes-extra kitty mpc mpd polybar
+
 fc-cache -fv
 
 mkdir -p $HOME/.config
@@ -12,8 +14,8 @@ mkdir -p $HOME/.local/share/mpd/playlists
 mkdir -p $HOME/Music
 cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
-sudo cp $HOME/Projects/dotfiles_i3/config/config30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
-sudo cp $HOME/Projects/dotfiles_i3/config/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+sudo cp $HOME/Projects/dotfiles_i3/utils/config30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo cp $HOME/Projects/dotfiles_i3/utils/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
