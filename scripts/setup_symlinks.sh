@@ -19,7 +19,7 @@ mkdir -p $HOME/Images/screenshots
 #mkdir -p $HOME/Music
 #cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
-sudo cp $HOME/Projects/dotfiles_i3/utils/config30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo cp $HOME/Projects/dotfiles_i3/utils/30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
 
 #sudo cp $HOME/Projects/dotfiles_i3/utils/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 
