@@ -10,12 +10,14 @@ mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
 sudo cp $HOME/Projects/dotfiles_i3/wallpapers/* /usr/share/backgrounds
 mkdir -p $HOME/Images/screenshots
-mkdir -p $HOME/.local/share/mpd/playlists
-mkdir -p $HOME/Music
-cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
+
+#mkdir -p $HOME/.local/share/mpd/playlists
+#mkdir -p $HOME/Music
+#cp $HOME/Projects/dotfiles_i3/music/* $HOME/Music
 
 sudo cp $HOME/Projects/dotfiles_i3/utils/config30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
-sudo cp $HOME/Projects/dotfiles_i3/utils/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
+
+#sudo cp $HOME/Projects/dotfiles_i3/utils/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
 
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
