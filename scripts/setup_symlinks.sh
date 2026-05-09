@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S alacritty base-devel brightnessctl dmenu feh git \
-gnu-free-fonts i3-wm i3status neovim less scrot tree ttf-firacode-nerd \
+gnu-free-fonts i3-wm i3status neovim less scrot openssh tree ttf-firacode-nerd \
 ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit xorg-xrandr xorg-xsetroot \
 pipewire pipewire-pulse wireplumber alsa-utils alsa-ucm-conf sof-firmware rtkit \
 intel-ucode mesa vulkan-intel
