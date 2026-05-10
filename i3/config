@@ -74,7 +74,7 @@ bindsym $mod+p exec scrot ~/Images/screenshots/scrot_%Y%m%d_%H%M%S.png
 bindsym $mod+Shift+p exec scrot -s ~/Images/screenshots/scrot_%Y%m%d_%H%M%S.png
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#333333' -sf '#EEEEEE' -fn 'monospace-18'"
+bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#333333' -sf '#EEEEEE' -fn 'monospace-15'"
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
