@@ -1,14 +1,17 @@
 #!/bin/bash
 
 sudo pacman -S alacritty base-devel brightnessctl dmenu feh git \
-gnu-free-fonts i3-wm i3status neovim less scrot openssh tree ttf-firacode-nerd \
-ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit xorg-xrandr xorg-xsetroot \
+gnu-free-fonts i3-wm i3status neovim less scrot openssh tlp tree \
+ttf-firacode-nerd ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit \
+xorg-xrandr xorg-xsetroot \
 pipewire pipewire-pulse wireplumber alsa-utils alsa-ucm-conf sof-firmware rtkit \
 intel-ucode mesa vulkan-intel
 
 # sudo pacman -S gnome-themes-extra kitty mpc mpd polybar
 
+sudo systemctl enable tlp.service
 fc-cache -fv
+echo "exec i3" > ~/.xinitrc
 
 mkdir -p $HOME/.config
 sudo mkdir -p /usr/share/backgrounds
