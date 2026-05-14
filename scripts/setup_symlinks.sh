@@ -1,13 +1,22 @@
 #!/bin/bash
 
-sudo pacman -S alacritty base-devel brightnessctl dmenu feh git \
-gnu-free-fonts i3-wm i3status neovim less scrot openssh tlp tree \
+sudo pacman -S base-devel brightnessctl dmenu feh git \
+gnu-free-fonts i3-wm i3status kitty neovim less scrot openssh tlp tree \
 ttf-firacode-nerd ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit \
 xorg-xrandr xorg-xsetroot \
 pipewire pipewire-pulse wireplumber alsa-utils alsa-ucm-conf sof-firmware rtkit \
 intel-ucode mesa vulkan-intel
+#sudo pacman -S alacritty gnome-themes-extra kitty mpc mpd polybar
 
-# sudo pacman -S gnome-themes-extra kitty mpc mpd polybar
+# Debian Packages
+#sudo apt update
+#sudo apt install -y \
+#alacritty build-essential brightnessctl dmenu feh git \
+#fonts-freefont-ttf i3 i3status neovim less scrot openssh-client \
+#tlp tree fonts-firacode xclip xorg xinit x11-xserver-utils \
+#pipewire pipewire-pulse wireplumber alsa-utils alsa-ucm-conf \
+#sof-firmware rtkit mesa-vulkan-drivers intel-microcode \
+#gnome-themes-extra kitty mpc mpd polybar
 
 sudo systemctl enable tlp.service
 fc-cache -fv
