@@ -23,5 +23,69 @@ require("lazy").setup({
   {
     "loctvl842/monokai-pro.nvim"
   },
+--})
+
+
+  ---------------------------------------------------------
+  -- NOVO: Busca ultra-rápida de Arquivos e Funções
+  ---------------------------------------------------------
+  --{
+    --"nvim-telescope/telescope.nvim",
+    --tag = "0.1.8",
+    --dependencies = { "nvim-lua/plenary.nvim" },
+    --config = function()
+      --local builtin = require("telescope.builtin")
+      -- Atalhos práticos de busca
+      --vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Buscar Arquivos" })
+      --vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Buscar Texto" })
+    --end
+  --},
+
+  ---------------------------------------------------------
+  -- NOVO: Gerenciador de Ferramentas Isolado
+  ---------------------------------------------------------
+  {
+    "williamboman/mason.nvim",
+    config = function()
+      require("mason").setup()
+    end
+  },
+
+  ---------------------------------------------------------
+  -- NOVO: Formatação de Código (Auto-format ao salvar)
+  ---------------------------------------------------------
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        -- Usa o ruff para organizar imports e formatar o código Python
+        python = { "ruff_organize_imports", "ruff_format" },
+      },
+      format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+      },
+    },
+  },
+
+  ---------------------------------------------------------
+  -- NOVO: Linting (Avisos de erros na lateral da linha)
+  ---------------------------------------------------------
+  {
+    "mfussenegger/nvim-lint",
+    config = function()
+      local lint = require("lint")
+      lint.linters_by_ft = {
+        python = { "ruff" },
+      }
+      
+      -- Executa o linter automaticamente ao salvar ou ler o arquivo
+      vim.api.nvim_create_autocmd({ "BufWritePost", "BufReadPost" }, {
+        callback = function()
+          lint.try_lint()
+        end,
+      })
+    end
+  },
 })
 
