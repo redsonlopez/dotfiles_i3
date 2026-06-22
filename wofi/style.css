@@ -1,0 +1,34 @@
+* {
+	background-color: rgba(22, 22, 22, 0.9);
+	color: #ffffff;
+}
+
+#input {
+    border: 1px solid #333;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+#input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #888;
+}
+
+#entry {
+    padding: 4px 8px;
+}
+
+#entry:selected {
+    border-radius: 6px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#scrollbar slider, scrollbar slider {
+    background-color: #aaaaaa;
+    border-radius: 6px;
+}
+

@@ -1,0 +1,137 @@
+* {
+	font-family: "Symbols Nerd Font", "monospace";
+	font-size: 11pt;
+	border: none;
+	border-radius: 0px;
+	color: #ffffff;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar {
+	background-color: #222222;
+}
+
+#cpu,
+#load,
+#memory,
+#temperature,
+#backlight,
+#pulseaudio,
+#network,
+#battery,
+#clock
+{
+	font-weight: 600;
+	padding: 0 6px;
+}
+
+#mode {
+	color: #222;
+	background-color: #0af;
+}
+
+#cpu.warning,
+#load.warning,
+#memory.warning,
+#temperature.warning,
+#battery.warning {
+	color: #222;
+	background-color: #fa0;
+}
+
+#pulseaudio.muted,
+#network.disconnected, 
+#cpu.critical,
+#load.critical,
+#memory.critical,
+#temperature.critical,
+#battery.critical {
+	color: #222;
+	background-color: #f00;
+}
+
+#workspaces button {
+	padding: 0 4px;
+	border: none;
+	background: transparent;
+}
+
+#workspaces button.focused {
+	font-weight: 700;
+}
+
+#custom-menu {
+	padding: 0 12px;
+	font-size: 14pt;
+	font-weight: 700;
+}
+
+#custom-menu:hover {
+	background: #555;
+}
+
+#bluetooth,
+#custom-power,
+#cpu,
+#load,
+#memory,
+#temperature,
+#backlight,
+#pulseaudio,
+#network,
+#battery,
+#clock {
+	border: 1px solid #111;
+	border-radius: 5px;
+	background-color: #333;
+	margin: 1px;
+}
+
+#custom-power {
+	padding: 0 10px;
+	margin: 1px 6px 1px 0px;
+}
+
+#clock {
+	margin: 1px 6px;
+}
+
+#custom-mpd-title {
+	margin: 1px 4px;
+	font-stretch: condensed;
+}
+
+#custom-mpd-prev,
+#custom-mpd,
+#custom-mpd-next {
+	padding: 0 6px;
+	border: 1px solid #111;
+	background: #333;
+	margin: 1px 0 1px 0;
+}
+
+#custom-mpd {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+	padding: 0 5px 0 10px;
+
+}
+
+#custom-mpd-prev {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+#custom-mpd-next {
+	border-left: none;
+  border-radius: 0 5px 5px 0;
+	padding: 0 10px 0 5px;
+}
+
+.modules-center {
+	margin: 0 5rem 0 1rem;
+}
+

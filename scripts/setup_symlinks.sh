@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# SWAY
+#sudo pacman -S foot git neovim tree ttf-nerd-fonts-symbols waybar wl-clipboard wmenu
+
+# I3
 sudo pacman -S base-devel brightnessctl dmenu feh git \
 gnu-free-fonts i3-wm i3status kitty neovim less scrot openssh tlp tree \
 ttf-firacode-nerd ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit \
@@ -38,7 +42,7 @@ sudo cp $HOME/Projects/dotfiles_i3/utils/30-touchpad.conf /etc/X11/xorg.conf.d/3
 DOTFILES_DIR="$HOME/Projects/dotfiles_i3"
 CONFIG_DIR="$HOME/.config"
 
-declare -a CONFIGS=("alacritty" "i3" "i3status" "kitty" "mpd" "nvim" "polybar")
+declare -a CONFIGS=("alacritty" "foot" "i3" "i3status" "kitty" "mpd" "nvim" "polybar" "qutebrowser" "sway" "waybar" "wofi")
 
 # Symbolic Link
 for dir in "${CONFIGS[@]}"; do

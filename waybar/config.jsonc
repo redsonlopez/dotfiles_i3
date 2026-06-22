@@ -1,0 +1,151 @@
+/*∆ Λ λ  Arch*/
+{
+	"layer": "top",
+  "position": "top",
+	"height": 25,
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  //"modules-center": ["custom/mpd", "custom/mpd-prev", "custom/mpd-next", "custom/mpd-title"],
+  "modules-right": [
+    "cpu",
+    "load",
+    "memory",
+	  "temperature",
+	  "backlight",
+    "pulseaudio",
+	  "network",
+	  "bluetooth",
+    "battery",
+    "clock",
+  ],
+
+  "custom/menu": {
+    "format": "λ",
+    "on-click": "wofi --show drun",
+    "tooltip": true,
+    "tooltip-format": "Arch Linux Sway"
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": " {usage}%",
+    "states": {
+      "warning": 60,
+      "critical": 85
+    }
+  },
+
+  "load": {
+    "interval": 5,
+    "format": " {}",
+    "states": {
+      "warning": 2.0,
+      "critical": 4.0
+    }
+  },
+
+  "memory": {
+    "interval": 5,
+    "format": "󰘚 {used:0.2f}",
+    "states": {
+      "warning": 50,
+      "critical": 70
+    }
+  },
+
+  "temperature": {
+    "critical-threshold": 80,
+    "warning-threshold": 65,
+    "format": "󰔏 {temperatureC}°C",
+    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input",
+    "tooltip": false
+  },
+
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {bandwidthDownBits}",
+    "format-disconnected": " down",
+    "tooltip": true,
+    "tooltip-format-wifi": "Network: {essid}\nIP: {ipaddr}\n↓ {bandwidthDownBits} ↑ {bandwidthUpBits}",
+    "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}\n↓ {bandwidthDownBits} ↑ {bandwidthUpBits}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "default": ["", "", ""]
+    }
+  },
+
+  "backlight": {
+    "format": "󰃟 {percent}%",
+    "device": "intel_backlight",
+    "tooltip": false
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "states": {
+      "warning": 50,
+      "critical": 20
+    }
+  },
+
+  "clock": {
+		"format": "{:%e %b %H:%M}",
+		"tooltip": true,
+		"tooltip-format": "{:%d.%m.%Y %H:%M}",
+		"interval": 5
+	},
+ 
+	"sway/mode": {
+    "format": " <span style=\"italic\">{}</span> ",
+    "tooltip": false
+	},
+
+	"bluetooth": {
+    "format": "",
+		"format-disabled": "",
+		"format-no-controller": "",
+		"on-click": "swaymsg exec \\$bluetooth",
+		"on-click-right": "rfkill toggle bluetooth",
+		"tooltip-format": "{}"
+	},
+
+  "custom/mpd": {
+    "exec": "state=$(mpc status | sed -n '2p' | awk '{print $1}'); if [ \"$state\" = \"[playing]\" ]; then echo \"\"; else echo \"\"; fi",
+    "interval": 1,
+    "tooltip": false,
+    "on-click": "mpc toggle"
+  },
+
+  "custom/mpd-prev": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "mpc prev",
+      "interval": "once"
+  },
+  
+  "custom/mpd-next": {
+      "format": "",
+      "tooltip": false,
+      "on-click": "mpc next",
+      "interval": "once"
+  },
+
+  "custom/mpd-title": {
+    "format": "{text}",
+    "exec": "t=$(mpc current); N=15; [ ${#t} -gt $N ] && t=\"${t:0:$N}…\"; echo \"$t\"",
+    "interval": 1,
+    "tooltip": false
+  },
+
+	"custom/power": {
+    "tooltip": false,
+		"format": "",
+		"on-click": "nwg-bar -x"
+	}
+}
