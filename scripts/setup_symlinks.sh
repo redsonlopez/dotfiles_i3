@@ -5,12 +5,12 @@
 
 # I3
 sudo pacman -S base-devel brightnessctl dmenu feh git \
-gnu-free-fonts i3-wm i3status kitty neovim less scrot openssh tlp tree \
+gnu-free-fonts i3-wm i3status kitty neovim less ripgrep scrot openssh tlp tree \
 ttf-firacode-nerd ttf-nerd-fonts-symbols xclip xorg-server xorg-xinit \
 xorg-xrandr xorg-xsetroot \
 pipewire pipewire-pulse wireplumber alsa-utils alsa-ucm-conf sof-firmware rtkit \
 intel-ucode mesa vulkan-intel
-#sudo pacman -S alacritty gnome-themes-extra kitty mpc mpd polybar
+#sudo pacman -S alacritty gnome-themes-extra mpc mpd polybar
 
 # Debian Packages
 #sudo apt update
