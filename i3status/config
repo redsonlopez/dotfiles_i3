@@ -6,6 +6,11 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
+# Color Palette
+# Red    = #e06c75
+# Yellow = #e5c07b
+# Green  = #98c379
+
 general {
 	colors = true
 	interval = 5
@@ -22,25 +27,45 @@ order += "tztime time"
 
 cpu_usage {
   format = " %usage"
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 load {
 	format = " %1min"
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 memory {
 	format = "󰘚 %used"
 	threshold_degraded = "1G"
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 wireless _first_ {
 	format_up = " %essid%quality"
 	format_down = " down"
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 ethernet _first_ {
 	format_up = " %speed"
 	format_down = " down"
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 volume master {
@@ -49,10 +74,19 @@ volume master {
 	device = "default"
 	mixer = "Master"
 	mixer_idx = 0
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 battery all {
 	format = " %percentage"
+  low_threshold = 20
+
+  color_good = "#98c379"
+  color_degraded = "#e5c07b"
+  color_bad = "#e06c75"
 }
 
 tztime time {
