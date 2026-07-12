@@ -220,7 +220,7 @@ bar {
         position top
         tray_output none
         status_command i3status
-        font pango:FreeSans Bold 10, Symbols Nerd Font 12
+        font pango:Symbols Nerd Font Italic 12
         colors {
 				        background #222222
 								statusline #dddddd
