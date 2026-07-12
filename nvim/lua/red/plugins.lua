@@ -20,12 +20,16 @@ require("lazy").setup({
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
-  {
-    "loctvl842/monokai-pro.nvim"
-  },
 
   ---------------------------------------------------------
-  -- NOVO: Busca ultra-rápida de Arquivos e Funções
+  -- Temas
+  ---------------------------------------------------------
+  --{
+    --"loctvl842/monokai-pro.nvim"
+  --},
+
+  ---------------------------------------------------------
+  -- Busca ultra-rápida de Arquivos e Funções
   ---------------------------------------------------------
   {
     "nvim-telescope/telescope.nvim",
@@ -34,7 +38,7 @@ require("lazy").setup({
   },
 
   ---------------------------------------------------------
-  -- NOVO: Gerenciador de Ferramentas Isolado
+  -- Gerenciador de Ferramentas Isolado
   ---------------------------------------------------------
   {
     "williamboman/mason.nvim",
@@ -44,7 +48,7 @@ require("lazy").setup({
   },
 
   ---------------------------------------------------------
-  -- NOVO: Formatação de Código (Auto-format ao salvar)
+  -- Formatação de Código (Auto-format ao salvar)
   ---------------------------------------------------------
   {
     "stevearc/conform.nvim",
@@ -61,7 +65,7 @@ require("lazy").setup({
   },
 
   ---------------------------------------------------------
-  -- NOVO: Linting (Avisos de erros na lateral da linha)
+  -- Linting (Avisos de erros na lateral da linha)
   ---------------------------------------------------------
   {
     "mfussenegger/nvim-lint",
