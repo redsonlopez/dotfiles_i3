@@ -1,7 +1,7 @@
 local api = vim.api
 
 -- Colors Scheme
-vim.cmd.colorscheme("monokai-pro-spectrum")
+vim.cmd.colorscheme("unokai")
 
 -- Theme Colors
 local base_bg         = "#222222" -- Main Background
