@@ -228,8 +228,8 @@ bar {
 								focused_workspace #222222 #222222 #ffffff
 								active_workspace #222222 #222222 #ffffff
 								inactive_workspace #222222 #222222 #777777
-								urgent_workspace #ff0000 #ff0000 #222222
-								binding_mode #c678dd #c678dd #222222
+								urgent_workspace #e06c75 #e06c75 #222222
+								binding_mode #222222 #222222 #e5c07b
 				}
 }
 
@@ -245,5 +245,5 @@ smart_borders on
 client.focused          #cccccc #cccccc #000000 #cccccc #444444dd
 client.focused_inactive #555555 #555555 #000000 #555555 #333333dd
 client.unfocused        #333333 #333333 #000000 #333333 #333333dd
-client.urgent           #ff0000 #ff0000 #000000 #ff0000 #ff0000dd
+client.urgent           #e06c75 #e06c75 #000000 #e06c75 #e06c75dd
 
