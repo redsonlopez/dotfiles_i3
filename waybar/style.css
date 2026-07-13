@@ -29,7 +29,7 @@ window#waybar {
 
 #mode {
 	color: #222;
-	background-color: #0af;
+	background-color: #c678dd;
 }
 
 #cpu.warning,
@@ -38,7 +38,7 @@ window#waybar {
 #temperature.warning,
 #battery.warning {
 	color: #222;
-	background-color: #fa0;
+	background-color: #e5c07b;
 }
 
 #pulseaudio.muted,
@@ -49,7 +49,7 @@ window#waybar {
 #temperature.critical,
 #battery.critical {
 	color: #222;
-	background-color: #f00;
+	background-color: #e06c75;
 }
 
 #workspaces button {

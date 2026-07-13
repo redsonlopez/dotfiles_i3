@@ -8,8 +8,11 @@
 
 # Color Palette
 # Red    = #e06c75
-# Yellow = #e5c07b
 # Green  = #98c379
+# Blue   = #61afef
+# Yellow = #e5c07b
+# Magenta = #c678dd
+# Cyan = #56b6c2
 
 general {
 	colors = true

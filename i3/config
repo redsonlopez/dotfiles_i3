@@ -225,11 +225,11 @@ bar {
 				        background #222222
 								statusline #dddddd
 								separator #555555
-								focused_workspace #222222 #222222 #FFFFFF
-								active_workspace #222222 #222222 #FFFFFF
+								focused_workspace #222222 #222222 #ffffff
+								active_workspace #222222 #222222 #ffffff
 								inactive_workspace #222222 #222222 #777777
-								urgent_workspace #FF0000 #FF0000 #222222
-								binding_mode #FFAA00 #FFAA00 #222222
+								urgent_workspace #ff0000 #ff0000 #222222
+								binding_mode #c678dd #c678dd #222222
 				}
 }
 
