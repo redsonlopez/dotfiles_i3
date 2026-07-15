@@ -10,7 +10,7 @@ local base_bg_popup   = "#333333" -- Popup / Pmenu
 local fg_muted        = "#888888" -- Secondary Text
 local fg_dim          = "#545454" -- Line Number
 local fg_separator    = "#777777" -- Borders and Separators
-local accent          = "#e5c07b" -- Selected Tab
+local accent          = "#c678dd" -- Selected Tab
 
 local function apply_highlights()
   -- Tabline - Title (Barra Superior)
