@@ -6,15 +6,15 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
-# Color Palette
-# Red    = #e06c75
-# Green  = #98c379
-# Yellow = #e5c07b
-
 general {
 	colors = true
 	interval = 5
+
+  color_good = "#98c379"      # Green
+  color_degraded = "#e5c07b"  # Yellow
+  color_bad = "#e06c75"       # Red
 }
+
 order += "cpu_usage"
 order += "load"
 order += "memory"
@@ -27,66 +27,39 @@ order += "tztime time"
 
 cpu_usage {
   format = " %usage"
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
 }
 
 load {
 	format = " %1min"
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
+  max_threshold = "5"
 }
 
 memory {
 	format = "󰘚 %used"
 	threshold_degraded = "1G"
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
+  threshold_critical = "500M"
 }
 
 wireless _first_ {
 	format_up = " %essid%quality"
 	format_down = " down"
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
 }
 
 ethernet _first_ {
 	format_up = " %speed"
 	format_down = " down"
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
 }
 
 volume master {
 	format = " %volume"
 	format_muted = " %volume"
-	device = "default"
-	mixer = "Master"
-	mixer_idx = 0
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
+	device = "pulse"
 }
 
 battery all {
 	format = " %percentage"
   low_threshold = 20
-
-  color_good = "#98c379"
-  color_degraded = "#e5c07b"
-  color_bad = "#e06c75"
+  threshold_type = "percentage"
 }
 
 tztime time {
