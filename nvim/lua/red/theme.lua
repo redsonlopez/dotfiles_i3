@@ -10,13 +10,13 @@ local base_bg_popup   = "#333333" -- Popup / Pmenu
 local fg_muted        = "#888888" -- Secondary Text
 local fg_dim          = "#545454" -- Line Number
 local fg_separator    = "#777777" -- Borders and Separators
-local accent          = "#888888" -- Selected Tab
+local accent          = "#56b6c2" -- Selected Tab
 
 local function apply_highlights()
   -- Tabline - Title (Barra Superior)
   api.nvim_set_hl(0, "TabLineFill", { bg = base_bg })
-  api.nvim_set_hl(0, "TabLineSel", { fg = base_bg, bg = accent })
-  api.nvim_set_hl(0, "TabLine", { fg = fg_muted, bg = base_bg })
+  api.nvim_set_hl(0, "TabLineSel", { fg = accent, bg = base_bg, bold = true })
+  api.nvim_set_hl(0, "TabLine", { fg = fg_muted, bg = base_bg, italic = true })
 
   -- Nvim Tree
   api.nvim_set_hl(0, "NvimTreeNormal",        { bg = base_bg })
