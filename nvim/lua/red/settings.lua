@@ -24,6 +24,7 @@ o.softtabstop = 2
 
 -- Number + Fold
 o.number = true
+o.relativenumber = true
 o.cursorline = true
 o.numberwidth = 4
 o.foldcolumn = "2"
